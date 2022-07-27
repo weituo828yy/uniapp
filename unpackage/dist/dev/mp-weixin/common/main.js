@@ -100,6 +100,7 @@ __webpack_require__.r(__webpack_exports__);
   onHide: function onHide() {
     console.log('App Hide');
   },
+  //页面未找到生命周期
   onPageNotFound: function onPageNotFound() {
     uni.navigateTo({
       url: './pages/404/404' });

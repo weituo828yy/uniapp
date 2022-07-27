@@ -1,6 +1,6 @@
 <template>
 	<view>
-		页面不存在
+		页面不存在！！！
 	</view>
 </template>
 
@@ -10,6 +10,17 @@
 			return {
 				
 			}
+		},
+		onLoad(){
+			/**
+			 * 2秒后跳转至首页
+			 */
+			let timer = setTimeout(()=>{
+				clearTimeout(timer) //清除内存
+				uni.reLaunch({
+					url:'/pages/index/index'
+				})
+			},2000)
 		},
 		methods: {
 			

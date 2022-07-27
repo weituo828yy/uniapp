@@ -9,6 +9,7 @@
 		onHide: function() {
 			console.log('App Hide')
 		},
+		//页面未找到生命周期
 		onPageNotFound(){
 			uni.navigateTo({
 				url:'./pages/404/404'

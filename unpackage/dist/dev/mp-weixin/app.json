@@ -1,14 +1,65 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/404/404"
+    "pages/404/404",
+    "pages/addressList/addressList",
+    "pages/mine/mine",
+    "pages/find/find"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subpages",
+      "pages": [
+        "news/news",
+        "show/show"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    "navigationBarTitleText": "爱丫丫",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#A7BBCE",
+    "selectedColor": "#198CF0",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/home.png",
+        "selectedIconPath": "/static/home-hover.png"
+      },
+      {
+        "pagePath": "pages/addressList/addressList",
+        "iconPath": "static/address.png",
+        "selectedIconPath": "static/address-hover.png",
+        "text": "通讯录"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "iconPath": "static/find.png",
+        "selectedIconPath": "static/find-hover.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/mine.png",
+        "selectedIconPath": "static/mine-hover.png",
+        "text": "我"
+      }
+    ]
+  },
+  "preloadRule": {
+    "subpages/news/news": {
+      "network": "all",
+      "packages": [
+        "subpages"
+      ]
+    }
   },
   "usingComponents": {}
 }
