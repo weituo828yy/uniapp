@@ -11,7 +11,7 @@
       "root": "subpages",
       "pages": [
         "news/news",
-        "show/show"
+        "chat/chat"
       ]
     }
   ],

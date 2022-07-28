@@ -1,6 +1,6 @@
 <template>
 	<view >
-		<text>首页</text>
+		<u-button text="月落" type="primary" :plain="true"></u-button>
 	</view>
 </template>
 

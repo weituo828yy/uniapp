@@ -1,1 +1,1 @@
-<view><text>首页</text></view>
+<view><u-button vue-id="8dd740cc-1" text="月落" type="primary" plain="{{true}}" bind:__l="__l"></u-button></view>

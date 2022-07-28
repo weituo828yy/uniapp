@@ -46,16 +46,14 @@
 				"enablePullDownRefresh": false
 			}
 
-		}    ,{
-                    "path" : "show/show",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
+		}, {
+			"path": "chat/chat",
+			"style": {
+				"navigationBarTitleText": "聊天",
+				"enablePullDownRefresh": false
+			}
+
+		}]
 	}],
 	"preloadRule": {
 		"subpages/news/news": {
@@ -96,5 +94,8 @@
 			"text": "我"
 		}]
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"easycom": {	
+		            "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		        }
 }
